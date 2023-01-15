@@ -1,0 +1,237 @@
+<!--
+Author: Mohamed Jasir Faiez M M
+Created Date: 14th december 2022
+Updated Date: 15th january 2023
+Template Name: Gp - v4.9.1 
+Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+Description: index page
+-->
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+    <link rel="icon" type="image/x-icon" href="assets/img/01e0dfd5-9ee5-41e9-afc7-d4703c6e6218.jpeg">
+  
+
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script>
+function validateForm() {
+  var name = document.querySelector("#name").value;
+  var email = document.querySelector("#email").value;
+  var age = document.querySelector("#age").value;
+  
+  var nameRegex = /^[A-Za-z ]+$/;
+  var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+  if (!nameRegex.test(name)) {
+    alert("Name should contain only alphabets and spaces");
+    return false;
+  }
+
+  if (!emailRegex.test(email)) {
+    alert("Please enter a valid email address");
+    return false;
+  }
+  if (age < 17 || age > 28) {
+    alert("Age should be above 16");
+    return false;
+  }
+  
+  alert("Thanks for submitting!");
+  return true;
+}
+
+    
+</script>
+    
+</head>
+
+<link href="assets/css/style.css" rel="stylesheet">
+<body style="background-color: black;">
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center justify-content-lg-between">
+    
+          <h1 class="logo me-auto me-lg-0"><img src="./assets/img/amrita.png"><span>.</span></a></h1>
+          
+    
+          <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+              <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+          </div>
+          </header>
+    <BR>
+    <BR>
+    <BR>
+  <center>
+
+
+  <h1 style="color: white;">Registeration Form</h1>
+  </center>
+    <form onsubmit="validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Name"required ><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Your Email" required><br><br>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter Your Age in Numbers"><br><br>
+        
+        <label for="batch">Batch:</label>
+        <select id="batch" name="batch">
+          <option value="" disabled selected>Select your batch</option>
+          <option value="batch1">CSE</option>
+          <option value="batch2">MEE</option>
+          <option value="batch3">CIVIL</option>
+          <option value="batch4">MATHEMATICS</option>
+          <option value="batch5">EEE</option>
+          <option value="batch6">ECE</option>
+
+        </select><br><br>
+        
+        <input type="submit" value="Submit">
+      </form>
+  
+</body>
+
+<style>
+form {
+  width: 530px;
+  margin: 15px auto;
+  background-color: #f5f5f5;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #ccc;
+  
+
+}
+
+label {
+  font-weight: bold;
+  font-size: 1.2em;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus {
+  border-color: #4CAF50;
+  box-shadow: 0px 0px 10px #4CAF50;
+}
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+}
+
+select:focus {
+  border-color: #4CAF50;
+  box-shadow: 0px 0px 10px #4CAF50;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+    #register-form {
+      width: 400px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    #register-form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    #register-form input[type="text"],
+    #register-form input[type="email"],
+    #register-form input[type="password"] {
+      width: 60%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+    }
+    #register-form input[type="submit"] {
+      width: 26%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #register-form input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    *, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
+}
+</style>
+</html>
